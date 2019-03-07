@@ -199,15 +199,15 @@ def player_numbers (teamName)
 end
 
 def player_stats (player_name)
-  playerStats = {}
+  #playerStats = {}
   game_hash.each do |key, value|
     value[:players].each do |newKey, newValue|
       if newKey == player_name
-        playerStats = newValue
+        return newValue
       end
     end
   end
-  playerStats
+  #playerStats
 end
 
 def big_shoe_rebounds
