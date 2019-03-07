@@ -319,3 +319,5 @@ def num_to_name (player_number)
     end
   end
 end
+
+puts num_to_name(33)
