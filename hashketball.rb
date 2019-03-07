@@ -137,7 +137,7 @@ def game_hash
 end
 
 def num_points_scored (player_name)
-  points = 0
+  #points = 0
   game_hash.each do |key, value|
     value.each do |newKey, newValue|
       if newKey == :players
@@ -280,10 +280,10 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton?
-  #longName = ""
-  #longNameLetterCount = 0
-  #thiefName = ""
-  #thiefStealCount = 0
+  longName = ""
+  longNameLetterCount = 0
+  thiefName = ""
+  thiefStealCount = 0
   game_hash.each do |key, value|
     value[:players].each do |newKey, newValue|
       tempName = newKey
