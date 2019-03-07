@@ -309,3 +309,13 @@ def long_name_steals_a_ton?
     false
   end
 end
+
+def num_to_name (player_number)
+  game_hash.each do |key, value|
+    value[:player].each do |key, value|
+      if value[:number] == player_number
+        return key
+      end
+    end
+  end
+end
